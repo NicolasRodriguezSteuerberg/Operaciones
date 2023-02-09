@@ -11,7 +11,7 @@ public class OperacionesBasicas {
      * @param num2 --> segundo numero de la operación (divisor en caso de division)
      * @return resultado
      */
-    public static float realizar(int device, float num1, float num2){
+    public static Float realizar(int device, float num1, float num2){
         switch (device){
             case SUMA:
                 try{
@@ -45,13 +45,4 @@ public class OperacionesBasicas {
         return resultado;
     }
 
-
-    //SETTERS Y GETTERS
-    public void setResultado(float resultado) {
-        this.resultado = resultado;
-    }
-
-    public float getResultado() {
-        return resultado;
-    }
 }
