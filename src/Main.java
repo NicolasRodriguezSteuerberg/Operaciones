@@ -1,17 +1,25 @@
-import com.nico.io.EntradaSalida;
 
 public class Main {
 
     public static void main(String[] args) {
         int opcion;
-        do{
-            Float resultado;
-            opcion = EntradaSalida.entradaInt("1 --> Hacer suma\n2 --> Hacer resta\n3 --> Hacer multiplicación\n4 --> Hacer división\n5 --> Saír do programa");
-            if(opcion > 0 && opcion < 5) {
-                resultado = OperacionesBasicas.realizar(opcion, EntradaSalida.entradaFloat("Teclee o primer número da operación"), EntradaSalida.entradaFloat("Teclee o segundo número da operación"));
-                EntradaSalida.salida(("O resultado da operación é " + resultado), EntradaSalida.SALIDA_WINDOW);
+        Float numero1, numero2;
+        Float resultado;
+        opcion = EntradaSalida.entradaInt("1 --> Hacer suma\n2 --> Hacer resta\n3 --> Hacer multiplicación\n4 --> Hacer división\n5 --> Saír do programa");
+        numero1 = EntradaSalida.entradaFloat("Teclee o primer número da operación");
+        numero2 = EntradaSalida.entradaFloat("Teclee o segundo número da operación");
+        if(numero1 == null || numero2==null){
+            EntradaSalida.salida("Tiene que ser un número, no una letra", EntradaSalida.SALIDA_CONSOLA);
+        }
+        else {
+            if (opcion > 0 && opcion < 5) {
+                resultado = OperacionesBasicas.realizar(opcion, numero1, numero2);
+                if (Float.isNaN(resultado)) {
+                    EntradaSalida.salida("Error", EntradaSalida.SALIDA_CONSOLA);
+                } else {
+                    EntradaSalida.salida(("O resultado da operación é " + resultado), EntradaSalida.SALIDA_WINDOW);
+                }
             }
-        }while (opcion > 0 && opcion < 5);
-        EntradaSalida.salida("Saíndo do programa", EntradaSalida.SALIDA_WINDOW);
+        }
     }
 }
