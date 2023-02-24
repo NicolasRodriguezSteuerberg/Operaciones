@@ -8,8 +8,8 @@ public class OperacionesBasicas {
 
     /**
      * @param device --> operación a realizar (SUMA, RESTA, MULTIPLICACIÓN, DIVISIÓN, RAICES)
-     * @param num1 --> primer numero de la operación (en caso de raiz es el indice)
-     * @param num2 --> segundo numero de la operación (divisor en caso de division, en caso de raiz el radicando)
+     * @param num1 --> primer numero de la operación (en caso de raiz es el radicando)
+     * @param num2 --> segundo numero de la operación (divisor en caso de division, en caso de raiz el indice)
      * @return resultado
      */
     public static Float realizar(int device, float num1, float num2){
@@ -45,7 +45,7 @@ public class OperacionesBasicas {
                 break;
             case RAICES:
                 try {
-                    resultado = (float) Math.pow(1 / num1, num2);
+                    resultado = (float) Math.pow(num1, 1/num2);
                 }catch (Exception e){
                     System.out.println("Error");
                 }
