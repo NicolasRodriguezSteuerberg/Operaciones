@@ -55,7 +55,7 @@ Para poder usar en la main la raiz creé en la clase OperacionesBasicas una vari
 
 Al tener todo funcionando habia que juntar la rama ___raices___ a la ___main___. En este caso utilice el merge squash ya que me lo pediá el enunciado. Una vez finalizado el merge squash me di cuenta que en el metodo raiz habia puesto al revés los datos, así que lo corregí. *Con esto solo me faltaba crear una nueva ___release___ con el nuevo jar del proyecto*.
 
-### RECORDATORIO DE COMO CREAR UN JAR Y UNA RELEASE:
+### RECORDATORIO DE CREAR UN JAR Y UNA RELEASE:
 
 > Para la creación del jar, en mi caso al utilizar IntelliJ, hay que ir: -file
 -project structure
