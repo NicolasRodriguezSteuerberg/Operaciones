@@ -57,26 +57,27 @@ Al tener todo funcionando habia que juntar la rama ___raices___ a la ___main___.
 
 ### RECORDATORIO DE CREAR UN JAR Y UNA RELEASE:
 
-> Para la creación del jar, en mi caso al utilizar IntelliJ, hay que ir: -file
--project structure
--artifacts
-- + jar  from modules with dependeces
+> Para la creación del jar, en mi caso al utilizar IntelliJ, hay que ir: 
+- File
+- Project structure
+- Artifacts
+- Simbolo más jar  from modules with dependeces
 Al hacer esto aplicamos y seguimos los siguientes pasos:
--Build
--Build artifacts
--Build
+- Build
+- Build artifacts
+- Build
 
 ---
 
 > Para la creación de la release hay que tener en cuenta que hay que tener una etiqueta, por si no sabes como subirla te dejo aquí los pasos:
--git tag nombreEtiqueta. En mi caso la llame OperacionesConRaiz
--git push origin --tags. De esta manera subes todas las etiquetas que tengas
+- git tag nombreEtiqueta. En mi caso la llame OperacionesConRaiz
+- git push origin --tags. De esta manera subes todas las etiquetas que tengas
 Teniendo la etiqueta subida procederemos a realizar la release desde el repositorio de github:
--Vamos a tags
--Releases
--Draft a new release
--Escogemos la etiqueta
--Ponemos una descripcion(opcional)
--Y en _Attach binaries by dropping them here or selecting them_ arrastramos nuestro jar
--Publish release
+- Vamos a tags
+- Releases
+- Draft a new release
+- Escogemos la etiqueta
+- Ponemos una descripcion(opcional)
+- Y en _Attach binaries by dropping them here or selecting them_ arrastramos nuestro jar
+- Publish release
 
