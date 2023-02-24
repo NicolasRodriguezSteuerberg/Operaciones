@@ -37,3 +37,46 @@ De aquí viene el nombre de la clase/librería que importamos en el siguiente pr
 ***A DESTACAR***
 
 > Los valores a operar y el resultado fueron declarados en la clase a la que pertenecen, de tal manera, poder contar con los métodos que estas clases poseen. Ej: el método para comprobar si el resultado es NaN
+
+---
+---
+***PARTE DEL EXAMEN***
+
+### METODO AÑADIDO:
+
+En el examen se nos pide crear un nuevo metodo para calcular raices, por lo que creando una rama raices cree el método raices. Para calcular las raices utilice el **Math.pow(base, expoñente)**. Las raices son un expoñente siendo la raiz cuadrada 2 elevado a ½, siguiendo esto en el expoñente dividi 1 entre el numero recibido.
+
+
+### PARAMETROS AÑADIDO:
+
+Para poder usar en la main la raiz creé en la clase OperacionesBasicas una variable RAICES que la igualé al numero 5. De esta manera en la main si le damos la opción numero 5 haremos una raiz
+
+### FINALIZACIÓN PROYECTO:
+
+Al tener todo funcionando habia que juntar la rama ___raices___ a la ___main___. En este caso utilice el merge squash ya que me lo pediá el enunciado. Una vez finalizado el merge squash me di cuenta que en el metodo raiz habia puesto al revés los datos, así que lo corregí. *Con esto solo me faltaba crear una nueva ___release___ con el nuevo jar del proyecto*.
+
+### RECORDATORIO DE CREAR UN JAR Y UNA RELEASE:
+
+> Para la creación del jar, en mi caso al utilizar IntelliJ, hay que ir: -file
+-project structure
+-artifacts
+- + jar  from modules with dependeces
+Al hacer esto aplicamos y seguimos los siguientes pasos:
+-Build
+-Build artifacts
+-Build
+
+---
+
+> Para la creación de la release hay que tener en cuenta que hay que tener una etiqueta, por si no sabes como subirla te dejo aquí los pasos:
+-git tag nombreEtiqueta. En mi caso la llame OperacionesConRaiz
+-git push origin --tags. De esta manera subes todas las etiquetas que tengas
+Teniendo la etiqueta subida procederemos a realizar la release desde el repositorio de github:
+-Vamos a tags
+-Releases
+-Draft a new release
+-Escogemos la etiqueta
+-Ponemos una descripcion(opcional)
+-Y en _Attach binaries by dropping them here or selecting them_ arrastramos nuestro jar
+-Publish release
+
