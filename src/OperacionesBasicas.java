@@ -7,7 +7,7 @@ public class OperacionesBasicas {
     static final int RAICES = 5;
 
     /**
-     * @param device --> operación a realizar (SUMA, RESTA, MULTIPLICACIÓN, DIVISIÓN, RAICES)
+     * @param device --> operación a realizar (1-SUMA, 2-RESTA, 3-MULTIPLICACIÓN, 4-DIVISIÓN, 5-RAICES)
      * @param num1 --> primer numero de la operación (en caso de raiz es el radicando)
      * @param num2 --> segundo numero de la operación (divisor en caso de division, en caso de raiz el indice)
      * @return resultado
