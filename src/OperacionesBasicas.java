@@ -44,7 +44,11 @@ public class OperacionesBasicas {
                 }
                 break;
             case RAICES:
-                    resultado = (float) Math.pow(1/num1 , num2);
+                try {
+                    resultado = (float) Math.pow(1 / num1, num2);
+                }catch (Exception e){
+                    System.out.println("Error");
+                }
         }
         return resultado;
     }
